@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, /*EventEmitter, Output*/ } from '@angular/core';
 
 @Component(
     {
@@ -8,11 +8,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 )
 export class HeaderComponent {
     collapsed: boolean = true;
-    
+    /*
     // EVENT-BINDING, EMETTERA' L'EVENTO CON UNA STRINGA
     @Output() featureSelect = new EventEmitter<string>();
 
     onSelect(feature: string) {
         this.featureSelect.emit(feature);
     }
+    */
 }

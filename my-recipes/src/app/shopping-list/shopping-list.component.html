@@ -1,9 +1,17 @@
 <div class="row">
     <div class="col-xs-10">
+        <!--<app-shopping-edit (ingredientAdded)="onIngredientAdded($event)"> </app-shopping-edit>-->
         <app-shopping-edit> </app-shopping-edit>
         <hr>
         <ul class="list-group">
-            <a [appHighlight]="'Orange'" [defaultColor]="'LightGreen'" style="cursor: pointer;" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">
+            <!--<a appHighlight href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
+            <!--<a appHighlight [defaultColor]="'LightGreen'" href="#" class="list-group-item" style="cursor: pointer" *ngFor="let item of ingredients">-->
+            <a
+                style="cursor: pointer;"
+                [appHighlight]="'Orange'"
+                [defaultColor]="'LightGreen'"
+                class="list-group-item"
+                *ngFor="let item of ingredients">
                 {{ item.name }} ({{ item.amount }})
             </a>
         </ul>
